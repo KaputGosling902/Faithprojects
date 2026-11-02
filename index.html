@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colby Choir — Young Men's A Cappella Group, Houston TX</title>
+  <meta name="description" content="Colby Choir is a young men's a cappella group based in Houston, Texas. Four parts, zero instruments. Auditions open for Spring 2027.">
+
+  <!-- Preload the hero image (above the fold) -->
+  <link rel="preload" href="public/images/hero-group-on-stage.webp" as="image" fetchpriority="high">
+
+  <!-- Display: Anton (condensed grotesk) · Body: Archivo · Accent: Instrument Serif Italic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a class="nav__wordmark" href="#top" aria-label="Colby Choir — home">COLBY&nbsp;CHOIR</a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#manifesto">About</a>
+        <a href="#sound">Sound</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#performances">Performances</a>
+        <a class="nav__audition" href="#audition">Audition</a>
+      </nav>
+    </div>
+
+    <!-- Full-screen mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Mobile">
+        <a href="#manifesto">About</a>
+        <a href="#sound">Sound</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#performances">Performances</a>
+        <a class="mobile-menu__audition" href="#audition">Audition</a>
+      </nav>
+      <p class="mobile-menu__foot">Houston, Texas — est. 2019</p>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Colby Choir">
+      <img class="hero__img" src="public/images/hero-group-on-stage.webp"
+           alt="Seven members of Colby Choir standing close together on stage under warm lighting"
+           fetchpriority="high" decoding="async">
+      <div class="hero__scrim" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <h1 class="hero__title">
+          <span class="hero__line">COLBY</span>
+          <span class="hero__line hero__line--offset">CHOIR</span>
+        </h1>
+        <p class="hero__tagline" data-fill="tagline">Four parts. Zero instruments. One Houston sound.</p>
+        <a class="btn btn--solid" href="#audition" data-fill="ctaLabel">Audition for Spring 2027</a>
+      </div>
+
+      <span class="hero__scrollcue" aria-hidden="true">SCROLL</span>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marquee-track"></div>
+    </div>
+
+    <!-- ============ MANIFESTO / ABOUT ============ -->
+    <section class="manifesto" id="manifesto" aria-labelledby="manifesto-title">
+      <header class="sec-head">
+        <span class="sec-head__index">01</span>
+        <h2 class="sec-head__title" id="manifesto-title">Who we are</h2>
+      </header>
+
+      <div class="manifesto__grid">
+        <div class="manifesto__text reveal">
+          <!-- Paragraphs injected from js/content.js -->
+          <div id="manifesto-paragraphs"></div>
+          <blockquote class="manifesto__quote" data-fill="pullQuote">
+            “We don’t add instruments. We add voices.”
+          </blockquote>
+        </div>
+
+        <figure class="manifesto__fig reveal">
+          <img src="public/images/rehearsal-four-voices.webp"
+               alt="Four members clustered together during rehearsal in muted, near black-and-white tones"
+               loading="lazy" decoding="async">
+          <figcaption>Rehearsal, 6 p.m. — the part where nobody talks.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ THE SOUND ============ -->
+    <section class="sound" id="sound" aria-labelledby="sound-title">
+      <header class="sec-head sec-head--on-dark">
+        <span class="sec-head__index">02</span>
+        <h2 class="sec-head__title" id="sound-title">The sound</h2>
+      </header>
+
+      <p class="sound__lede reveal">No band. No tracks. What you hear is the room, the breath, and forty-odd seconds of holding a chord.</p>
+
+      <!--
+        EMBED GOES HERE: paste your YouTube / Spotify / SoundCloud iframe inside .player__frame.
+        Keep the aspect-ratio box below it as-is so the layout doesn't jump.
+      -->
+      <div class="player reveal">
+        <div class="player__frame" role="img" aria-label="Video placeholder — paste your embed in the HTML comment above">
+          <span class="player__tri" aria-hidden="true"></span>
+          <span class="player__label">VIDEO COMING SOON</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+      <header class="sec-head">
+        <span class="sec-head__index">03</span>
+        <h2 class="sec-head__title" id="gallery-title">Off the page</h2>
+      </header>
+
+      <div class="gallery__grid">
+        <figure class="g-item reveal" data-full="public/images/evening-set-dim-light.webp">
+          <img src="public/images/evening-set-dim-light.webp"
+               alt="Six members singing together under dim blue-grey light"
+               loading="lazy" decoding="async">
+          <figcaption>Six voices under dim blue light — winter set.</figcaption>
+        </figure>
+
+        <figure class="g-item g-item--bw reveal" data-full="public/images/duet-cool-backdrop.webp">
+          <img src="public/images/duet-cool-backdrop.webp"
+               alt="Two members facing each other mid-phrase against a cool slate-blue backdrop"
+               loading="lazy" decoding="async">
+          <figcaption>Tenor and bass, mid-phrase.</figcaption>
+        </figure>
+
+        <figure class="g-item reveal" data-full="public/images/soloist-soft-focus.webp">
+          <img src="public/images/soloist-soft-focus.webp"
+               alt="A single performer in soft focus against a grey background"
+               loading="lazy" decoding="async">
+          <figcaption>A soloist finds the top note.</figcaption>
+        </figure>
+
+        <figure class="g-item g-item--bw reveal" data-full="public/images/full-group-low-light.webp">
+          <img src="public/images/full-group-low-light.webp"
+               alt="The full choir gathered together in low light"
+               loading="lazy" decoding="async">
+          <figcaption>The full group before doors open.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ NUMBERS / PROOF ============ -->
+    <section class="numbers" aria-label="Colby Choir in numbers">
+      <div class="numbers__row" id="stats-row"></div><!-- rendered from js/content.js -->
+    </section>
+
+    <!-- ============ UPCOMING PERFORMANCES ============ -->
+    <section class="performances" id="performances" aria-labelledby="perf-title">
+      <header class="sec-head">
+        <span class="sec-head__index">04</span>
+        <h2 class="sec-head__title" id="perf-title">On the road — Winter / Spring 2027</h2>
+      </header>
+
+      <ul class="perf-list" id="perf-list"></ul><!-- rendered from js/content.js -->
+    </section>
+
+    <!-- ============ APPLICATION PORTAL ============ -->
+    <section class="audition" id="audition" aria-labelledby="audition-title">
+      <header class="sec-head">
+        <span class="sec-head__index">05</span>
+        <h2 class="sec-head__title" id="audition-title">Join the ranks</h2>
+      </header>
+
+      <div class="audition__intro reveal">
+        <p data-fill="auditionIntro">Auditions for Spring 2027 are open. Sing something you know — a hymn, a pop song, a barbershop arrangement, your shower demo. We don't care how it started; we care how it lands.</p>
+        <p class="audition__dates" data-fill="auditionDates">Applications open Jan 5, 2027 · Auditions run Feb 1 – Mar 15, 2027 · New members announced Apr 1, 2027</p>
+      </div>
+
+      <!-- Form is rendered from FIELD_DEFS in js/form.js -->
+      <form class="audition__form" id="audition-form" novalidate></form>
+
+      <div class="audition__success" id="audition-success" hidden aria-live="polite">
+        <p class="audition__success-title">You're in the queue.</p>
+        <p>Application received. We'll be in touch with next steps — keep an eye on your inbox.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p class="footer__wordmark" aria-hidden="true">COLBY CHOIR</p>
+    <div class="footer__row">
+      <nav class="footer__socials" aria-label="Social media">
+        <a href="#">Instagram</a><a href="#">YouTube</a><a href="#">Spotify</a>
+      </nav>
+      <a class="footer__email" href="mailto:auditions@colbychoir.com">auditions@colbychoir.com</a>
+      <p class="footer__loc">Houston, Texas</p>
+    </div>
+    <p class="footer__fine">© 2026 Colby Choir. All voices reserved.</p>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" aria-label="Close image">×</button>
+    <figure>
+      <img class="lightbox__img" src="" alt="">
+      <figcaption class="lightbox__cap"></figcaption>
+    </figure>
+  </div>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
